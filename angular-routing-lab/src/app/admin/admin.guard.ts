@@ -1,5 +1,3 @@
-import { CanActivateFn } from '@angular/router';
-
-export const adminGuard: CanActivateFn = (route, state) => {
-  return true;
-};
+import { Injectable } from "@angular/core";
+import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree } from "@angular/router";
+import { Observable } from "rxjs";
