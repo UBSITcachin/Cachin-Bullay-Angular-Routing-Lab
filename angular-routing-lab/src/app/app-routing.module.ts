@@ -9,7 +9,8 @@ import { NgModule } from '@angular/core';
    { path: '', redirectTo: '/home', pathMatch: 'full' },
    { path: 'home', component: HomeComponent },
    { path: 'about', component: AboutComponent },
-   { path: 'contact', component: ContactComponent} ];
+   { path: 'contact', component: ContactComponent},
+   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) } ];
 
 
  @NgModule({
