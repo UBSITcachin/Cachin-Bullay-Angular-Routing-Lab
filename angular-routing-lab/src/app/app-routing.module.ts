@@ -14,7 +14,6 @@ import { NgModule } from '@angular/core';
     ]},
     { path: 'contact', component: ContactComponent }
   ];
- 
 
  @NgModule({
    imports: [RouterModule.forRoot(routes)],
