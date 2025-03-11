@@ -45,4 +45,35 @@
     justify-content: space-between;
   }
   
-  
+  .custom-card {
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent */
+    color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+.custom-card img {
+    height: 350px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.custom-card:hover {
+    transform: scale(1.05); /* Zoom effect */
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
+}
+
+.card-title {
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+}
+.character-header {
+  font-family: 'Bangers', cursive;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  margin-bottom: 20px;
+}
