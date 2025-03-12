@@ -17,14 +17,28 @@
         <li class="nav-item">
           <a class="nav-link custom-link" routerLink="/home" routerLinkActive="active">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link custom-link" routerLink="/about" routerLinkActive="active">About</a>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle custom-link" 
+             href="#" 
+             id="aboutDropdown" 
+             role="button" 
+             data-bs-toggle="dropdown" 
+             aria-expanded="false">
+            About
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+            <li>
+              <a class="dropdown-item custom-link" routerLink="/about" routerLinkActive="active">About</a>
+            </li>
+            <li>
+              <a class="dropdown-item custom-link" routerLink="/about/profile" routerLinkActive="active">Profile</a>
+            </li>
+          </ul>
         </li>
+        
         <li class="nav-item">
           <a class="nav-link custom-link" routerLink="/contact" routerLinkActive="active">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link custom-link" routerLink="/profile" routerLinkActive="active">Profile</a>
         </li>
       </ul>
     </div>

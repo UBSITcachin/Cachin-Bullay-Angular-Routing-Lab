@@ -11,7 +11,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { 
     path: 'about', component: AboutComponent, children: [
-      { path: 'profile', component: ProfileComponent } // Fixed 'pathprofile'
+      { path: 'profile', component: ProfileComponent } 
     ]
   },
   { path: 'contact', component: ContactComponent },

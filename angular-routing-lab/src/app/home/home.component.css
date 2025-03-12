@@ -46,7 +46,7 @@
   }
   
   .custom-card {
-    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent */
+    background: rgba(0, 0, 0, 0.7); 
     color: white;
     border-radius: 15px;
     overflow: hidden;
@@ -62,7 +62,7 @@
 }
 
 .custom-card:hover {
-    transform: scale(1.05); /* Zoom effect */
+    transform: scale(1.05); 
     box-shadow: 0 8px 20px rgba(255, 255, 255, 0.3);
 }
 
@@ -76,4 +76,69 @@
   color: white;
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
   margin-bottom: 20px;
+}
+.footer {
+  background: rgba(37, 23, 77, 0.9); 
+  color: white;
+  text-align: center;
+  padding: 10px; 
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-size: 14px; 
+  font-weight: bold;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px; 
+  margin-top: 8px; 
+}
+
+.social-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px; 
+  height: 32px; 
+  border-radius: 50%;
+  background-color: white; 
+  color: #2c2c2c; 
+  text-decoration: none;
+  font-size: 16px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  background-color: #ddd; 
+}
+.fa {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: white;
+  color: #2c2c2c; 
+  text-decoration: none;
+  font-size: 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.fa:hover {
+  transform: scale(1.2);
+  background-color: #ddd; 
+}
+
+
+.fa-envelope::before {
+  content: "\f0e0"; 
+}
+
+.fa-instagram::before {
+  content: "\f16d"; 
 }
