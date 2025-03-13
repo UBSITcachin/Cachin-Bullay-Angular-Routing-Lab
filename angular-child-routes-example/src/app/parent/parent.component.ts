@@ -1,11 +1,10 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';  
 
 @Component({
   selector: 'app-parent',
-  imports: [],
   templateUrl: './parent.component.html',
-  styleUrl: './parent.component.css'
+  standalone: true,  
+  imports: [RouterModule], 
 })
-export class ParentComponent {
-
-}
+export class ParentComponent { }
