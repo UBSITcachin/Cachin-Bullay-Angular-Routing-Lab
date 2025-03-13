@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ParentComponent } from './parent/parent.component';
-import { ChildOneComponent } from './child-one/child-one.component';
-import { ChildTwoComponent } from './child-two/child-two.component';
+import { ChildOneComponent } from './parent/child-one/child-one.component';
+import { ChildTwoComponent } from './parent/child-two/child-two.component';
 
 const routes: Routes = [
     {
