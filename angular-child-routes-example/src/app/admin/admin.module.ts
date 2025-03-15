@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { AdminRoutingModule } from './admin-routing.module';
-import { AdminComponent } from './admin.component';
-
+import { AdminComponent } from './admin.component'; // If AdminComponent exists
+import { ParentComponent } from '../parent/parent.component';
+import { ChildOneComponent } from '../child-one/child-one.component';
+import { ChildTwoComponent } from '../child-two/child-two.component';
 
 @NgModule({
   declarations: [
-    AdminComponent
+    AdminComponent, // Declare AdminComponent
+    
   ],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    ParentComponent,
+    ChildOneComponent,
+    ChildTwoComponent
   ]
 })
-export class AdminModule { }
+export class AdminModule {}
